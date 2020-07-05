@@ -1,0 +1,28 @@
+2020-07-05 23:52:11> Program: Starting Squirrel Updater: --install .
+2020-07-05 23:52:11> Program: Starting install, writing to C:\Users\FURKAN KARAALP\AppData\Local\SquirrelTemp
+2020-07-05 23:52:11> Program: About to install to: C:\Users\FURKAN KARAALP\AppData\Local\GitHubDesktop
+2020-07-05 23:52:12> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: 'C:\Users\FURKAN KARAALP\AppData\Local\GitHubDesktop\packages\.betaId' yolunun bir parçası bulunamadı.
+   konum: System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   konum: System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   konum: System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, Stri2020-07-05 23:52:12> Unhandled exception: System.AggregateException: Bir veya daha fazla hata oluştu. ---> System.IO.IOException: İşlem, başka bir işlem tarafından kullanıldığından 'C:\Users\FURKAN KARAALP\AppData\Local\GitHubDesktop\Update.exe' dosyasına erişemiyor.
+   konum: System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   konum: System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   konum: System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   konum: Squirrel.Update.Program.<>c__DisplayClass4_1.<Install>b__4()
+   konum: Squirrel.Utility.LogIfThrows(IFullLogger This, LogLevel level, String message, Action block)
+   konum: Squirrel.Utility.ErrorIfThrows(IEnableLogger This, Action block, String message)
+   konum: Squirrel.Update.Program.<Install>d__4.MoveNext()
+   --- İç özel durum yığını izlemesinin sonu ---
+   konum: System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   konum: System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   konum: System.Threading.Tasks.Task.Wait()
+   konum: Squirrel.Update.Program.executeCommandLine(String[] args)
+   konum: Squirrel.Update.Program.main(String[] args)
+---> (İç Özel Durum #0) System.IO.IOException: İşlem, başka bir işlem tarafından kullanıldığından 'C:\Users\FURKAN KARAALP\AppData\Local\GitHubDesktop\Update.exe' dosyasına erişemiyor.
+   konum: Syste2020-07-05 23:52:12> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2020-07-05 23:52:14> ApplyReleasesImpl: Writing files to app directory: C:\Users\FURKAN KARAALP\AppData\Local\GitHubDesktop\app-2.5.3
+2020-07-05 23:52:29> LogHost: Rigging execution stub for GitHubDesktop_ExecutionStub.exe to C:\Users\FURKAN KARAALP\AppData\Local\GitHubDesktop\GitHubDesktop.exe
+his, LogLevel level, String message, Action block)
+   konum: Squirrel.Utility.ErrorIfThrows(IEnableLogger This, Action block, String message)
+   konum: Squirrel.Update.Program.<Install>d__4.MoveNext()<---
+
